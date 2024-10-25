@@ -80,6 +80,9 @@ def configure_shell():
     configure_dotfiles()
     configure_oh_myzsh()
 
+def configure_nvim():
+    run_command("git clone https://github.com/JoseMartinsNetto/nvim2.git ~/.config/nvim")
+
 if __name__ == "__main__":
     install_brew_packages()
     install_cask_apps()
@@ -87,4 +90,6 @@ if __name__ == "__main__":
     install_deno()
     install_rust()
     configure_shell()
+    configure_nvim()
+
     print("Setup completo!")

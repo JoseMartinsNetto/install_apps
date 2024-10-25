@@ -10,7 +10,6 @@ brew_packages = [
     "go",
     "nvm",
     "tmux",
-    "rust"
 ]
 
 cask_apps = [
@@ -66,6 +65,12 @@ def install_java():
     run_command('curl -s "https://get.sdkman.io" | bash')
     run_command("sdk install java 17.0.12-amzn")
 
+def install_deno():
+    run_command("curl -fsSL https://deno.land/install.sh | sh")
+
+def install_rust():
+    run_command("curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh")
+
 def configure_shell():
     # Setup git
     run_command("git config --global user.name 'José Martins'")
@@ -76,8 +81,10 @@ def configure_shell():
     configure_oh_myzsh()
 
 if __name__ == "__main__":
-    # install_brew_packages()
-    # install_cask_apps()
-    # install_java()
-    # configure_shell()
+    install_brew_packages()
+    install_cask_apps()
+    install_java()
+    install_deno()
+    install_rust()
+    configure_shell()
     print("Setup completo!")

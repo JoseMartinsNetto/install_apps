@@ -19,4 +19,4 @@ else
 fi
 
 # Rodar o script Python para continuar a configuração
-python3 setup.py
+python3 install_apps

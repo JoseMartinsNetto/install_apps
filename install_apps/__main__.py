@@ -76,8 +76,8 @@ def configure_shell():
     configure_oh_myzsh()
 
 if __name__ == "__main__":
-    install_brew_packages()
-    install_cask_apps()
-    install_java()
-    configure_shell()
+    # install_brew_packages()
+    # install_cask_apps()
+    # install_java()
+    # configure_shell()
     print("Setup completo!")

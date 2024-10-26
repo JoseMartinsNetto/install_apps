@@ -2,4 +2,4 @@
 
 You need to run:
 
-        sh setup.sh
+    sh setup.sh

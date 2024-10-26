@@ -1,5 +1,4 @@
-
-from install_apps.utils import run_command
+from utils import run_command
 
 brew_packages = [
     "git",

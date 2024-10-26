@@ -1,4 +1,4 @@
-from install_apps.utils import *
+from utils import *
 
 def configure_dotfiles():
     run_command("curl -o ~/.funcs.zsh https://raw.githubusercontent.com/JoseMartinsNetto/dotfiles/refs/heads/master/.funcs.zsh")

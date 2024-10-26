@@ -1,4 +1,4 @@
-from install_apps.utils import *
+from utils import *
 
 def install_java():
     run_command('curl -s "https://get.sdkman.io" | bash')
